@@ -1,131 +1,178 @@
-﻿# SOA Library Management System 📚
+<h1 align="center">📚 SOA Library Management System</h1>
 
-A comprehensive, full-stack library management solution built for **Siksha 'O' Anusandhan (SOA) University**. This platform facilitates seamless book tracking, student management, overdue monitoring, and fine processing with a modern, high-performance UI.
+<p align="center">
+A comprehensive, full-stack library management solution built for 
+<b>Siksha 'O' Anusandhan (SOA) University</b>.
+</p>
 
-## 🚀 Key Features
+<p align="center">
+Seamless book tracking • Student management • Overdue monitoring • Fine processing
+</p>
 
-### 👤 Student Dashboard
-*   **Book Discovery**: Search and browse the entire library collection.
-*   **Personal Tracking**: Monitor currently issued books and view return history.
-*   **Fine Management**: Integrated **Razorpay** gateway for instant fine payments.
-*   **Customization**: 6+ premium color themes (Royal Blue, Vibrant Purple, Emerald Green, etc.).
-*   **Profile Settings**: Manage email, password, and profile picture (Avatar support).
-*   **Personalized Reports**: Download a complete PDF history of your library activity.
+<hr>
 
-### 🛡️ Librarian Console
-*   **Issue/Return System**: Simplified workflow for managing books for students.
-*   **Overdue Monitor**: Real-time tracking of late returns with automated and manual notice systems.
-*   **Notice System**: Send formal email notifications to students directly from the dashboard.
-*   **Stat Insights**: Quick view of active issues, total students, and collection health.
+<h2>🚀 Key Features</h2>
 
-### ⚙️ Admin Console
-*   **Inventory Management**: Add, update, and remove books from the system.
-*   **Student Directory**: Complete control over student accounts and registration details.
-*   **Advanced Analytics**: Visual insights into circulation trends, category distribution, and financial health (fines collected vs. pending).
-*   **Global Exports**: Export the entire book catalog or student list as professional PDF reports.
+<h3>👤 Student Dashboard</h3>
+<ul>
+  <li><b>Book Discovery:</b> Search and browse the entire library collection.</li>
+  <li><b>Personal Tracking:</b> Monitor issued books and return history.</li>
+  <li><b>Fine Management:</b> Integrated <b>Razorpay</b> gateway for instant fine payments.</li>
+  <li><b>Customization:</b> 6+ premium color themes (Royal Blue, Vibrant Purple, Emerald Green, etc.).</li>
+  <li><b>Profile Settings:</b> Manage email, password & profile picture (Avatar support).</li>
+  <li><b>Personalized Reports:</b> Download a complete PDF history of library activity.</li>
+</ul>
 
-## 🛠️ Technology Stack
+<h3>🛡️ Librarian Console</h3>
+<ul>
+  <li><b>Issue/Return System:</b> Simplified workflow for managing books.</li>
+  <li><b>Overdue Monitor:</b> Real-time tracking with automated & manual notices.</li>
+  <li><b>Notice System:</b> Send formal email notifications directly from dashboard.</li>
+  <li><b>Stat Insights:</b> View active issues, total students & collection health.</li>
+</ul>
 
-*   **Frontend**: React.js, Tailwind CSS, Lucide React, Framer Motion, Recharts.
-*   **Backend**: Node.js, Express.js.
-*   **Database**: MongoDB Atlas (Mongoose).
-*   **Payments**: Razorpay API.
-*   **Notifications**: Nodemailer (Gmail SMTP).
-*   **Reporting**: jsPDF & AutoTable.
-*   **Date Handling**: Day.js.
+<h3>⚙️ Admin Console</h3>
+<ul>
+  <li><b>Inventory Management:</b> Add, update & remove books.</li>
+  <li><b>Student Directory:</b> Full control over student accounts.</li>
+  <li><b>Advanced Analytics:</b> Circulation trends, categories & fine statistics.</li>
+  <li><b>Global Exports:</b> Export catalog & student list as professional PDFs.</li>
+</ul>
 
-## 📦 Installation & Setup
+<hr>
 
-### Prerequisites
-*   Node.js (v18+)
-*   MongoDB Atlas Account
-*   Razorpay API Keys
-*   Gmail App Password (for notifications)
+<h2>🛠️ Technology Stack</h2>
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Anshuman-1234/nexus_p1.git
-cd nexus_p1
-```
+<table>
+<tr>
+<td><b>Frontend</b></td>
+<td>React.js, Tailwind CSS, Lucide React, Framer Motion, Recharts</td>
+</tr>
+<tr>
+<td><b>Backend</b></td>
+<td>Node.js, Express.js</td>
+</tr>
+<tr>
+<td><b>Database</b></td>
+<td>MongoDB Atlas (Mongoose)</td>
+</tr>
+<tr>
+<td><b>Payments</b></td>
+<td>Razorpay API</td>
+</tr>
+<tr>
+<td><b>Notifications</b></td>
+<td>Nodemailer (Gmail SMTP)</td>
+</tr>
+<tr>
+<td><b>Reporting</b></td>
+<td>jsPDF & AutoTable</td>
+</tr>
+<tr>
+<td><b>Date Handling</b></td>
+<td>Day.js</td>
+</tr>
+</table>
 
-### 2. Backend Setup
-1. Navigate to the backend directory:
-   ```bash
-   cd Backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file in the root (soa/) directory (use the structure below):
-   ```env
-   MONGO_URI=your_mongodb_uri
-   RAZORPAY_KEY_ID=your_key_id
-   RAZORPAY_KEY_SECRET=your_key_secret
-   EMAIL_ADDRESS=your_email@gmail.com
-   EMAIL_PASSWORD=your_app_password
-   ```
-4. Start the server:
-   ```bash
-   npm start
-   ```
+<hr>
 
-### 3. Frontend Setup
-1. Navigate to the frontend directory:
-   ```bash
-   cd ../Frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Build for production (optional):
-   ```bash
-   npm run build
-   ```
-4. Start development server:
-   ```bash
-   npm run dev
-   ```
+<h2>📦 Installation & Setup</h2>
 
-## 🌐 Vercel Deployment
+<h3>Prerequisites</h3>
+<ul>
+  <li>Node.js (v18+)</li>
+  <li>MongoDB Atlas Account</li>
+  <li>Razorpay API Keys</li>
+  <li>Gmail App Password</li>
+</ul>
 
-This project is optimized for deployment on **Vercel** as a full-stack monorepo.
+<h3>1️⃣ Clone the Repository</h3>
 
-### Deployment Steps
-1. Push your code to a GitHub repository.
-2. Import the project in Vercel.
-3. In **Project Settings**:
-   - **Framework Preset**: Other
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `Frontend/dist`
-4. Add the following **Environment Variables**:
-   - `MONGO_URI`
-   - `RAZORPAY_KEY_ID`
-   - `RAZORPAY_KEY_SECRET`
-   - `EMAIL_ADDRESS`
-   - `EMAIL_PASSWORD`
-   - `VERCEL=true` (Required)
+<pre><code>git clone https://github.com/Anshuman-1234/nexus_p1.git
+cd nexus_p1</code></pre>
 
-### ⚠️ Note on Cron Jobs
-The built-in `node-cron` in `Backend/index.js` will not run on Vercel because serverless functions are execution-limited. To enable automatic overdue notices, use [Vercel Cron Jobs](https://vercel.com/docs/cron-jobs) to ping your `/api/overdue-books` endpoint daily.
+<h3>2️⃣ Backend Setup</h3>
 
-## 📄 License
-This project is developed for Siksha 'O' Anusandhan. All rights reserved.
+<pre><code>cd Backend
+npm install</code></pre>
 
----
-Developed with ❤️ by Nexus-E4
----
-##Technical Contributors:
+<p>Create a <b>.env</b> file in the root directory:</p>
 
-1) Anshuman Barik (Backend Developer)
-2) Piyush Tiwari  (Backend Developer)
-3) Siddhant Jena  (Frontend Developer)
+<pre><code>MONGO_URI=your_mongodb_uri
+RAZORPAY_KEY_ID=your_key_id
+RAZORPAY_KEY_SECRET=your_key_secret
+EMAIL_ADDRESS=your_email@gmail.com
+EMAIL_PASSWORD=your_app_password</code></pre>
 
-##Related URL :
+<pre><code>npm start</code></pre>
 
-###Vercel Deployment URL of SOA Library Information Management System:
+<h3>3️⃣ Frontend Setup</h3>
+
+<pre><code>cd ../Frontend
+npm install
+npm run dev</code></pre>
+
+<hr>
+
+<h2>🌐 Vercel Deployment</h2>
+
+<ol>
+  <li>Push your project to GitHub.</li>
+  <li>Import it into Vercel.</li>
+  <li><b>Framework Preset:</b> Other</li>
+  <li><b>Build Command:</b> npm run build</li>
+  <li><b>Output Directory:</b> Frontend/dist</li>
+</ol>
+
+<h3>Environment Variables</h3>
+<ul>
+  <li>MONGO_URI</li>
+  <li>RAZORPAY_KEY_ID</li>
+  <li>RAZORPAY_KEY_SECRET</li>
+  <li>EMAIL_ADDRESS</li>
+  <li>EMAIL_PASSWORD</li>
+  <li>VERCEL=true</li>
+</ul>
+
+<p><b>Note:</b> For automatic overdue notices, configure Vercel Cron Jobs to ping:
+<code>/api/overdue-books</code></p>
+
+<hr>
+
+<h2>🔗 Live Links</h2>
+
+<p>
+🌍 <b>Live Deployment:</b> 
+<a href="https://nexus-p1.vercel.app/" target="_blank">
 https://nexus-p1.vercel.app/
+</a>
+</p>
 
-###APK URL of SOA Library Information Management System:
-https://drive.google.com/file/d/1t7QJjU9M83p6iYZgev2vf_CHcU5jNOJi/view?usp=drivesdk
+<p>
+📱 <b>Android APK:</b> 
+<a href="https://drive.google.com/file/d/1t7QJjU9M83p6iYZgev2vf_CHcU5jNOJi/view?usp=drivesdk" target="_blank">
+Download APK
+</a>
+</p>
+
+<hr>
+
+<h2>👨‍💻 Technical Contributors</h2>
+
+<ul>
+  <li><b>Anshuman Barik</b> – Backend Developer</li>
+  <li><b>Piyush Tiwari</b> – Backend Developer</li>
+  <li><b>Siddhant Jena</b> – Frontend Developer</li>
+</ul>
+
+<hr>
+
+<h2>📄 License</h2>
+
+<p>
+This project is developed for Siksha 'O' Anusandhan. All rights reserved.
+</p>
+
+<p align="center">
+Developed with ❤️ by <b>Nexus-E4</b>
+</p>
